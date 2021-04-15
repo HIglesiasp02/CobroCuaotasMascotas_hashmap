@@ -81,5 +81,4 @@ public abstract class Mascota implements Tarifable {
         return true;
     }
 
-    
 }
