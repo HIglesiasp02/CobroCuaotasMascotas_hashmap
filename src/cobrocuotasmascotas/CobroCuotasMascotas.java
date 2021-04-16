@@ -119,7 +119,7 @@ public class CobroCuotasMascotas {
                     System.out.print("Clase del perro(1-4):");
                     clasep = sc.nextLine();
                     if (!Perro.validarClase(clasep)) {
-                        System.out.println("Curso incorrecto");
+                        System.out.println("Clase incorrecto");
                     }
                 } while (!Perro.validarClase(clasep));
                 dato = Integer.parseInt(clasep);
@@ -129,7 +129,7 @@ public class CobroCuotasMascotas {
                 String claseg;
 
                 do {
-                    System.out.print("Case del gato(1-4): ");
+                    System.out.print("Clase del gato(1-4): ");
                     claseg = sc.nextLine();
                     if (!Gato.validarClase(claseg)) {
                         System.out.println("Valor introducido incorrecto");
