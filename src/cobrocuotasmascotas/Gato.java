@@ -49,7 +49,6 @@ public class Gato extends Mascota {
 
     @Override
     public String mostrar() {
-        return "Mascota{" + "propietario=" + propietario.mostrarPropietario() + ", identificador=" + identificador + ", clase=" + clase + ", tasas=" + calcularCuota() + '}';
+        return "Mascota{" + "propietario=" + propietario.mostrarPropietario() + ", identificador=" + identificador + ", clase=" + clase + ", cuota=" + calcularCuota() + '}';
     }
 }
-
