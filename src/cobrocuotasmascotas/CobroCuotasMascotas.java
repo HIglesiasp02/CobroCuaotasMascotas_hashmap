@@ -12,6 +12,7 @@ import java.util.Scanner;
 /**
  *
  * @author daw120
+ * Dejaré esto por aquí y me marcharé
  */
 public class CobroCuotasMascotas {
 
