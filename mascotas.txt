@@ -1,0 +1,1 @@
+Identificador: 12345-LLL Contenido: Mascota{propietario=Propietario{nombre=hbjdfu, apellidos=hfbjd, dni=12345678Z}, identificador=12345-LLL, clase=1, cuota=350}

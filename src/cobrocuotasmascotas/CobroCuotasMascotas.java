@@ -5,6 +5,7 @@
  */
 package cobrocuotasmascotas;
 
+import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -60,6 +61,7 @@ public class CobroCuotasMascotas {
                     if (opt.equals("2")) {
                         mascotas.put(identificador, new Gato(propietario, identificador, dato));
                     }
+                    escribirFichero(mascotas);
 
                     break;
                 case "2":
@@ -68,6 +70,7 @@ public class CobroCuotasMascotas {
                     break;
                 case "3":
                     eliminarMascota(mascotas);
+                    escribirFichero(mascotas);
 
                     break;
                 case "4":
@@ -183,6 +186,19 @@ public class CobroCuotasMascotas {
         System.out.println("Tasas totales de gatos: " + gatos);
         System.out.println("Tasas totales: " + (perros + gatos));
 
+    }
+
+    public static void escribirFichero(HashMap<String, Mascota> mascotas) {
+        FileWriter fichero;
+        try {
+            fichero = new FileWriter("mascotas.txt");
+            for (String i : mascotas.keySet()) {
+                fichero.write(mascotas.get(i).mostrar() + "\n");
+            }
+            fichero.close();
+        } catch (Exception e) {
+            System.out.println("Mensaje de la excepción: " + e.getMessage());
+        }
     }
 
 }
